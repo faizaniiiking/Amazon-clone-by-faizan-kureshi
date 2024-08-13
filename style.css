@@ -156,5 +156,136 @@ nav{
 
 }
 
+.boxRow{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    justify-content: space-between;
+    margin: 20px 30px;
+}
+
+.boxCol{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 20px;
+    background-color: #fff;
+    max-width: 24%;
+    min-height: 200px;
+    z-index: 1;
+}
+
+.boxCol a{
+    font-size: 13px;
+    color: #009999;
+    font-weight: 500;
+}
+
+.headerBox{
+    margin-top: -20vw;
+}
+
+.productsSlider{
+    background-color: #fff;
+    margin: 0 30px;
+    padding: 20px;
+    margin-bottom:15px ;
+
+}
+  
+
+.productsSlider .products{
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    margin-top: 10px;
+    white-space: nowrap;
+    
+       
+    }
+    
 
 
+
+
+.productsSlider .products img{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.productsSlider .products::-webkit-scrollbar{
+    display: none;
+}
+ 
+
+.productsSliderWithPrice{
+    background: #fff;
+    margin: 0 30px;
+    padding: 20px;
+    margin-bottom: 15px;
+
+}
+
+.productsSliderWithPrice .products{
+    display: flex;
+    overflow-x:auto ;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.productsSliderWithPrice .products::-webkit-scrollbar{
+    display: none;
+}
+
+.productCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    min-width: 210px;
+    background-color: #fbfbfb;
+}
+
+.productCard img{
+    width: 110px;
+    margin: 0 50px;
+}
+
+.productOffer p{
+    background-color:#be0b3b ;
+    color: #fff;
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 2px;
+    margin: 8px 0;
+    font-size: 13px;
+}
+
+.productOffer span{
+    color:#be0b3b ;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+
+
+
+.productPrice{
+    color: gray;
+}
+
+.productCard h4{
+    color: #525252;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+footer{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background-color: #131921;
+    padding: 20px 60px;
+
+}

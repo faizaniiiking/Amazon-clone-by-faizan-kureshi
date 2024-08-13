@@ -28,4 +28,29 @@ prevBtn.addEventListener("click", (e)=>{
 
 
 
-})
+}) 
+
+nextBtn.addEventListener("click", (e)=>{
+    if(n<imgs.length - 1){
+        n++;
+    }
+    else{
+        n = 0;
+
+    }
+    changeslide();
+
+
+
+}) 
+
+document.addEventListener("DOMContentLoaded", () => {
+    const scrollContainers = document.querySelectorAll(".products");
+
+    for (const item of scrollContainers) {
+        item.addEventListener("wheel", (evt) => {
+            evt.preventDefault();
+            item.scrollLeft += evt.deltaX ;
+        });
+    }
+});
